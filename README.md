@@ -1,8 +1,17 @@
-A library builder for generating `copyWith` extension for classes.
+A library builder for generating `copyWith` extension for classes. 
+
+This library will generate a dart file that will add an `extension` on classes with `@copyWith` annotation.
+The purpose of this library is to reduce boilerplate and time on for creating `copyWith` functions.   
 
 ## Installation
 
-Install `build_runner` and `copy_with_code_gen` as dev_dependencies:
+Set the Dart SDK version to `'>=2.7.0 <3.0.0'`
+```yaml
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+```
+
+Add `build_runner` and `copy_with_code_gen` as dev_dependencies:
 
 ```yaml
 dev_dependencies:
@@ -29,6 +38,10 @@ class User {
 
 }
 ```
+
+After adding the `part '{{file_name}}.g.dart'` and `@copyWith annotation, run:
+
+`pub run build_runner build` or `flutter pub run build_runner build` (if you are using Flutter)
 
 ## Features and bugs
 
