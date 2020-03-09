@@ -39,7 +39,7 @@ class User {
 }
 ```
 
-After adding the `part '{{file_name}}.g.dart'` and `@copyWith annotation, run:
+After adding the `part '{{file_name}}.g.dart'` and `@copyWith annotation`, run:
 
 `pub run build_runner build` or `flutter pub run build_runner build` (if you are using Flutter)
 
