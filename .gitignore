@@ -10,6 +10,10 @@ build/
 # Directory created by dartdoc
 doc/api/
 
+# Ignore example's generated files when pub get is called
 example/.dart_tool
 example/.packages
 example/pubspec.lock
+
+# Ignore idea directory
+.idea/
