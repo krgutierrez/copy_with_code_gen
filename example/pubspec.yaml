@@ -1,0 +1,11 @@
+name: copy_with_code_gen_example
+description: An example usage of copy_with_code_gen
+version: 0.0.1
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+  build_runner: ^1.7.4
+  copy_with_code_gen:
+    path: ../

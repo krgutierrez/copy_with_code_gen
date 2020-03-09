@@ -1,0 +1,8 @@
+builders:
+  property_multiply:
+    import: "package:copy_with_code_gen/copy_with_code_gen.dart"
+    builder_factories: ["copyWithBuilder"]
+    build_extensions: {".dart": ["copy_with_code_gen.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
